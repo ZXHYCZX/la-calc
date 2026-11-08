@@ -82,3 +82,4 @@ jobs:
       - run: gh release create "$GITHUB_REF_NAME" rel/* --title "LA Calc $GITHUB_REF_NAME" --generate-notes
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
