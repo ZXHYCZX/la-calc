@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const isWin = process.platform === "win32";
-const SDK = process.env.ANDROID_SDK || process.env.ANDROID_SDK_ROOT || process.env.ANDROID_HOME
+const SDK = process.env.ANDROID_SDK || process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT
   || (isWin ? "C:/Users/25402/rea-tools/android-sdk" : "");
 const JDK = process.env.JAVA_HOME || (isWin ? "C:/Users/25402/rea-tools/jdk-21.0.13+9" : "");
 if (!SDK) { console.error("缺少 ANDROID_SDK 环境变量"); process.exit(1); }
