@@ -1,0 +1,17 @@
+{
+  "name": "la-calc",
+  "productName": "LA Calc",
+  "version": "1.0.0",
+  "main": "main.js",
+  "build": {
+    "appId": "com.lacalc.offline",
+    "files": ["main.js", "web/**/*"],
+    "win": { "target": ["nsis"] },
+    "linux": { "target": ["AppImage"], "category": "Education" },
+    "mac": { "target": ["dmg"] }
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  }
+}

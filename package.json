@@ -1,0 +1,15 @@
+{
+  "name": "la-calc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线线性代数计算器 — Android / Web / Desktop",
+  "scripts": {
+    "test:engine": "node src/tests/smoke.js && node src/tests/matrix-smoke.js && node src/tests/ep1-test.js && node src/tests/ep2-test.js",
+    "build:web": "node scripts/build-web.js",
+    "build:apk": "node la-app/build-apk.js"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.5.16",
+    "katex": "0.16.11"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>线性代数计算器</title>
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 导航头 -->
+<header class="nav">
+  <button class="back" id="navBack">‹</button>
+  <div class="title" id="navTitle">线性代数计算器</div>
+  <div class="right"></div>
+</header>
+
+<!-- 主页 -->
+<div class="view-home active" id="viewHome">
+  <div class="banner">
+    <span class="sym s1">λ</span>
+    <span class="sym s2">∑</span>
+    <span class="sym s3">|A|</span>
+    <h1>线性代数计算器</h1>
+    <p>精确计算 · 分步展示 · 纯离线运行</p>
+    <div class="badges">
+      <span class="badge">有理数精确算术</span>
+      <span class="badge">根式特征值</span>
+      <span class="badge">39 项功能</span>
+    </div>
+  </div>
+  <div id="homeMenu"></div>
+</div>
+
+<!-- 功能页 -->
+<div class="view-page" id="viewPage">
+  <div id="pageHead"></div>
+  <div id="inputs"></div>
+  <div class="hint" id="hint"></div>
+  <div id="results"></div>
+</div>
+
+<!-- 底部按钮 -->
+<div class="btnbar" id="btnbar" style="display:none">
+  <button class="btn btn-ghost" id="btnSample">示例</button>
+  <button class="btn btn-primary" id="btnGo">计 算</button>
+</div>
+
+<script src="katex/katex.min.js"></script>
+<script src="engine-bundle.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
